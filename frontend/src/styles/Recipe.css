@@ -1,0 +1,35 @@
+.item {
+    width: 30%;
+    height: 350px;
+    background-color: #89c2dd;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.item-preview img{
+    margin: 20px auto;
+    max-width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+.item-preview{ 
+    text-align: center;
+}
+
+.item-preview>p:last-of-type {
+    margin-top: 10px;
+}
+
+.item > p:last-of-type {
+    padding-bottom: 10px;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -3,12 +3,14 @@ from rest_framework import generics
 
 from book.models import Category, Recipe
 from .serializers import CategorySerializer, RecipeSerializer
+from .pagination import LargeResultsSetPagination
 
 
 # Create your views here.
 
 class CategoryListView(generics.ListAPIView):
     serializer_class = CategorySerializer
+    pagination_class = LargeResultsSetPagination
 
     def get_queryset(self):
         return Category.objects.all()
