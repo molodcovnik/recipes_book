@@ -8,7 +8,7 @@ import '../styles/Recipes.css'
 const Recipes = (props) => {
 
     const [recipes, setRecipes] = React.useState([]);
-    let lS = 0;
+    
     if(!recipes.length) {
         axios.get(`http://127.0.0.1:8000/api/recipes/?page=${props.pageNumber}`).then(res=> {
         console.log(res);
@@ -17,6 +17,7 @@ const Recipes = (props) => {
     }
     return (
         <div className="main-content">
+           
             <div className='recipes-list'>
                 {recipes.map(recipe =>
                     <Recipe key={recipe.id} recipe={recipe}/>
@@ -28,8 +29,7 @@ const Recipes = (props) => {
                 console.log('next');
                 
                 console.log(props.pageNumber);
-                // localStorage.setItem('test4', props.pageNumber);
-                // console.log(localStorage.getItem('test4'));
+                
             }}>Next page</button>
         </div>
     );

@@ -14,9 +14,12 @@ const Recipe = (props) => {
                         {props.recipe.category.map(catName =>
                             <p key={catName.id}>{catName.name}</p>
                             )}
+                        
                     </div>
                         {/* <p>Категория:{recipe.category[0].name}</p> */}
-                       
+                        <button className='open-recipe' onClick={() => {
+                            console.log(props.recipe.id)
+                        }}>Читать</button>
                     
                     
                 </div>
