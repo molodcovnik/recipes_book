@@ -1,3 +1,14 @@
-.current-category {
-    margin-top: 6%;
+ .current-category {
+    /* margin-top: 1%; */
+    text-align: center;
 }
+
+/* .recipes-list {
+    width: 950px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}  */

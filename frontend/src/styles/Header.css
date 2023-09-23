@@ -12,6 +12,7 @@
 }
 
 .logo img {
+    cursor: pointer;
     height: 96px;
     width: 96px;
 }

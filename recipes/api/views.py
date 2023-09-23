@@ -22,6 +22,11 @@ class RecipesListView(generics.ListAPIView):
     def get_queryset(self):
         queryset = Recipe.objects.all().order_by('-time_add')
         category = self.request.query_params.get("category")
+        id = self.request.query_params.get("id")
+
         if category is not None:
             return queryset.filter(category__name=category)
+        
+        elif id is not None:
+            return queryset.filter(id=id)
         return queryset

@@ -1,6 +1,8 @@
 import React from 'react';
 
+import store from '../store';
 import '../styles/Recipe.css'
+import { Link } from 'react-router-dom';
 
 const Recipe = (props) => {
     return (
@@ -17,9 +19,14 @@ const Recipe = (props) => {
                         
                     </div>
                         {/* <p>Категория:{recipe.category[0].name}</p> */}
-                        <button className='open-recipe' onClick={() => {
+                        {/* <button className='open-recipe' onClick={() => {
                             console.log(props.recipe.id)
-                        }}>Читать</button>
+                        }}>Читать</button> */}
+                        <div className='btn'><Link className='btn-open' to={`/recipe/${props.recipe.id}`} onClick={() => {
+                            console.log(props.recipe.id);
+                            store.dispatch({type: 'recipe/getRecipe', payload: props.recipe.id});
+                            console.log(store.getState())
+                        }}>Читать</Link></div>
                     
                     
                 </div>

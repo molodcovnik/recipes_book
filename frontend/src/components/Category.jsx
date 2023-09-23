@@ -1,14 +1,20 @@
 import React from 'react';
-
+// import axios from 'axios';
 import { Link } from 'react-router-dom';
+import store from '../store';
 import '../styles/Category.css'
+
 
 const Category = (props) => {
     
     return (
-       <li onClick={() => console.log(props.category.name)}>
-            <Link to="/category">{props.category.name}</Link>
-            {/* {props.category.name} */}
+       <li onClick={() => {
+        // console.log(props.category.name);
+        store.dispatch({type: 'category/getCategory', payload: props.category.name});
+        console.log(store.getState())
+        
+        }}>
+            <Link to={`/category/${props.category.name}`}>{props.category.name}</Link>
         </li>
     );
 };

@@ -7,7 +7,7 @@ import "../styles/Categories.css";
 
 
 const Sidebar = () => {
-
+    
     const [categories, setCategories] = React.useState([]);
 
     if(!categories.length) {

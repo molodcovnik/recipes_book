@@ -11,6 +11,7 @@ import CurrentCategory from "./CurrentCategory";
 
 import "../styles/App.css";
 import Recipes from "./Recipes";
+import CurrentRecipe from "./CurrentRecipe";
 
 
 
@@ -25,7 +26,8 @@ function App () {
             <Routes>
                 <Route path="/" element={<RecipesList/>}>
                     <Route index element={<Recipes pageNumber={pageNumber}/>}/>
-                    <Route path="category" element={<CurrentCategory/>}/>
+                    <Route path="category/:categoryName" element={<CurrentCategory/>}/>
+                    <Route path="recipe/:id" element={<CurrentRecipe/>}/>
                 </Route>
             </Routes>
         </>

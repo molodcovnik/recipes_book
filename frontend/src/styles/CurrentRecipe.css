@@ -1,0 +1,8 @@
+.recipe {
+    width: 950px;
+    margin: 6% auto;
+}
+
+.categories > span::after{
+    content: ' ';
+}

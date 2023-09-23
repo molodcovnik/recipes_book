@@ -6,7 +6,10 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className="logo">
-            <img src="https://img.icons8.com/doodle/96/hamburger.png" alt="hamburger"/>
+            <img src="https://img.icons8.com/doodle/96/hamburger.png" alt="hamburger" onClick={() => {
+                console.log('logo');
+                window.location.pathname = '/';
+            }}/>
             </div>
             <div className="name">
                 Book of recipes
