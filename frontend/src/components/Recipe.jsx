@@ -9,7 +9,12 @@ const Recipe = (props) => {
         <div className="item">
                     <div className="item-preview">
                         <p>{props.recipe.title}</p>
-                        <p>Время готовки {props.recipe.cooking_time}</p>
+                        {/* <p>Время готовки {props.recipe.cooking_time}</p> */}
+                        <div className='cooking'>
+                        <img width="24" height="24" src="https://img.icons8.com/material/24/time--v2.png" alt="time--v2"/>
+                        <span>{props.recipe.cooking_time}</span>
+                        </div>
+                        
                         <img src={props.recipe.preview_img ? props.recipe.preview_img : props.recipe.main_img} alt="main" />
                     </div>
                     <div className="category">

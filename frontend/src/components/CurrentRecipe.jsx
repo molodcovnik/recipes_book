@@ -51,19 +51,25 @@ const CurrentRecipe = () => {
         <div className='recipe'>
             <div className="title">
                 <h2>{title}</h2>
-                <p>{cookingTime}</p>
+                <span>{date}</span>
+                <span> {time}</span>
+                <div className='cooking-time'>
+                    <img width="24" height="24" src="https://img.icons8.com/material/24/time--v2.png" alt="time--v2"/>
+                    <p>Время готовки: {cookingTime}</p>
+                </div>
             </div>
             <div className='categories'>
                 {categories.map(category =>
                     <span key={category.id}>{category.name}</span>)}    
             </div>
+            <img src={mainImg} alt="main"/>
             <p>{ingridient}</p>
+            <hr />
             <p>{text}</p>
-            <span>{date}</span>
-            <span> {time}</span>
+           
            
             
-             <img src={mainImg} alt="main" width={400} height={200}/> 
+              
         </div>
     );
 };

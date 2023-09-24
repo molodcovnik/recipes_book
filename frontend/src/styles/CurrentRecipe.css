@@ -1,8 +1,69 @@
 .recipe {
-    width: 950px;
-    margin: 6% auto;
+    width: 750px;
+    margin: 6% 1rem;
+}
+
+.recipe>img:last-of-type {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
 }
 
 .categories > span::after{
-    content: ' ';
+    content: '  ';
+}
+
+.title {
+    width: 50%;
+
+    /* margin: 0 auto; */
+}
+
+.title h2 {
+    color: rgb(49, 49, 48);
+}
+
+.cooking-time{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooking-time p {
+    margin-top: 5px;
+    font-weight: 800;
+    color: rgb(49, 49, 48);
+}
+
+.cooking-time img{
+    margin-top: 3px;
+}
+
+.categories {
+    margin: 20px 0;
+    font-weight: 500;
+    font-style: italic;
+  
+}
+
+.recipe > p:first-of-type {
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(49, 49, 48);
+    margin: 10px;
+}
+
+.recipe>p:last-of-type {
+    line-height: 150%;
+    color: rgb(28, 28, 28);
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+.title>span:first-of-type, .title>span:last-of-type {
+    font-size: .8rem;
+    font-style: italic;
 }

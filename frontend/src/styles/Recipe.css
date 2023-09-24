@@ -7,7 +7,7 @@
     margin-bottom: 25px;
 }
 
-.item-preview img{
+.item-preview>img:last-of-type{
     margin: 0 auto;
     /* padding: 100px 0; */
     max-width: 90%;
@@ -23,6 +23,15 @@
 
 .item-preview>p:last-of-type {
     margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .item > p:last-of-type {
@@ -58,3 +67,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.cooking {
+    width: 40%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
