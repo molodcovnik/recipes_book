@@ -6,6 +6,9 @@
 ### Django REST Framework + React JS
 
 
+![main_page](./frontend/public/main_page.png)
+
+
 ### Установка приложения
 ____
 
@@ -25,3 +28,9 @@ npm build
 npm start
 
 ```
+
+
+### Просмотр API Документации по ссылке:
+
+
+http://127.0.0.1:8000/api/schema/docs/
