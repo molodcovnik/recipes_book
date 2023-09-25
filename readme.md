@@ -15,8 +15,9 @@ ____
 
 ```
 git clone https://github.com/molodcovnik/recipes_book.git
+pip install -r requirements.txt
 venv\scripts\activate
-cd recipes
+(venv): cd recipes
 python manage.py runserver
 ```
 
@@ -28,7 +29,11 @@ npm build
 npm start
 
 ```
+### Админ панель
+____
 
+    логин: nik
+    пароль: nik
 
 ### Просмотр API Документации по ссылке:
 
