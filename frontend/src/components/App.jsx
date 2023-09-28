@@ -12,6 +12,7 @@ import CurrentCategory from "./CurrentCategory";
 import "../styles/App.css";
 import Recipes from "./Recipes";
 import CurrentRecipe from "./CurrentRecipe";
+import CreateRecipe from "./CreateRecipe";
 
 
 
@@ -28,6 +29,7 @@ function App () {
                     <Route index element={<Recipes pageNumber={pageNumber}/>}/>
                     <Route path="category/:categoryName" element={<CurrentCategory/>}/>
                     <Route path="recipe/:id" element={<CurrentRecipe/>}/>
+                    <Route path="create" element={<CreateRecipe/>}/>
                 </Route>
             </Routes>
         </>

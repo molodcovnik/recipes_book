@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -11,6 +12,8 @@ const selectRecipe = state => state.recipe.recipe;
 
 
 const CurrentRecipe = () => {
+
+    const linkClicker = React.useRef(null)
 
     const recipeItems = useSelector(selectRecipe);
     let recipeId = recipeItems.at(-1).id;
@@ -46,6 +49,9 @@ const CurrentRecipe = () => {
         })
     }, [recipeId])
    
+    const handleClick = () => {
+        linkClicker.current.click();
+    }
 
     return (
         <div className='recipe'>
@@ -66,6 +72,17 @@ const CurrentRecipe = () => {
             <p>{ingridient}</p>
             <hr />
             <p>{text}</p>
+            <button className='delete-recipe' onClick={() => {
+                console.log(recipeId);
+                
+                axios.delete(`http://127.0.0.1:8000/api/recipes/${recipeId}/delete/`)
+                .then(res => {
+                    console.log(res.data);
+                    handleClick()})
+                
+            }}>Удалить</button>
+            <br />
+            <Link to={'/'} ref={linkClicker} className='hidden-link'/>
            
            
             

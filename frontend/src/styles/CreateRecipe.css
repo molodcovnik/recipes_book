@@ -1,0 +1,109 @@
+.create-recipe {
+    margin-top: 5%;
+    width: 750px;
+    height: auto;
+    /* background-color: #ed6b6b; */
+    
+}
+
+.create-recipe h2 {
+    text-align: center;
+    color: #4b4847;
+}
+
+.create-form {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.category-label {
+    margin-top: 10px;
+}
+
+.link-main, .submit-form {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    width: 50%;
+}
+
+.link-main {
+    background-color: #89c2dd;
+}
+
+.link-main:hover {
+    background-color: #5fafd4;
+}
+
+.upload {
+    background-color: #1bed29;
+    color:#4b4847;
+    opacity: .95;
+    border: none;
+}
+
+.upload:hover {
+    background-color: #1bed29;
+    color:#191818;
+    border: 2px solid #a09e9e;
+    opacity: 1.5;
+}
+
+#file-input {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    line-height: 0;
+    overflow: 0;
+   
+}
+
+.custom-input-upload {
+    padding: 0;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 28px;
+    height: 28px;
+    
+}
+label {
+    font-size: 1.2rem;
+    color: #4b4847;
+}
+
+select {
+    margin-top: 10px;
+    border: #89c2dd 2px solid;
+    padding: 0 10px;
+}
+
+option {
+    font-size: 1.2rem;
+    color: #585655;
+    
+}
+
+input {
+    border: #89c2dd 2px solid;
+    height: 40px;
+    color: #585655;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+textarea {
+    border: #89c2dd 2px solid;
+    margin-top: 10px;
+    color: #585655;
+    padding: 0 10px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #127119;
+    /* font-weight: 700; */
+}

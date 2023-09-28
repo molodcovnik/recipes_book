@@ -67,3 +67,29 @@ hr {
     font-size: .8rem;
     font-style: italic;
 }
+
+.delete-recipe {
+    margin-top: 25px;
+    padding: 10px 30px;
+    background-color: #f00b0b;
+    border-radius: 10px;
+    border-style: none;
+    opacity: .95;
+    cursor: pointer;
+    
+    color: rgba(213, 207, 207, 0.832)
+}
+
+.delete-recipe:hover {
+    opacity: 1.5;
+}
+
+.hidden-link {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
