@@ -16,7 +16,7 @@ ____
 ```
 git clone https://github.com/molodcovnik/recipes_book.git
 python3 -m venv venv
-venv\scripts\activate
+source venv\bin\activate
 pip install -r requirements.txt
 (venv): cd recipes
 python manage.py runserver
