@@ -21,9 +21,6 @@ function App () {
     let pageNumber = 1;
     return (
         <>
-            
-            
-            
             <Routes>
                 <Route path="/" element={<RecipesList/>}>
                     <Route index element={<Recipes pageNumber={pageNumber}/>}/>

@@ -15,8 +15,9 @@ ____
 
 ```
 git clone https://github.com/molodcovnik/recipes_book.git
-pip install -r requirements.txt
+python3 -m venv venv
 venv\scripts\activate
+pip install -r requirements.txt
 (venv): cd recipes
 python manage.py runserver
 ```
@@ -25,6 +26,7 @@ python manage.py runserver
 
 ```
 cd frontentd
+npm install
 npm build
 npm start
 
